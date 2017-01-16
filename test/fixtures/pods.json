@@ -1,0 +1,602 @@
+{
+  "kind": "PodList",
+  "apiVersion": "v1",
+  "metadata": {
+    "selfLink": "/api/v1/pods",
+    "resourceVersion": "9565"
+  },
+  "items": [
+    {
+      "metadata": {
+        "name": "hello-minikube-3015430129-hhmmm",
+        "generateName": "hello-minikube-3015430129-",
+        "namespace": "default",
+        "selfLink": "/api/v1/namespaces/default/pods/hello-minikube-3015430129-hhmmm",
+        "uid": "ef3b0446-db5b-11e6-b44c-9a02921ce06a",
+        "resourceVersion": "5690",
+        "creationTimestamp": "2017-01-15T19:50:58Z",
+        "labels": {
+          "pod-template-hash": "3015430129",
+          "run": "hello-minikube"
+        },
+        "annotations": {
+          "kubernetes.io/created-by": "{\"kind\":\"SerializedReference\",\"apiVersion\":\"v1\",\"reference\":{\"kind\":\"ReplicaSet\",\"namespace\":\"default\",\"name\":\"hello-minikube-3015430129\",\"uid\":\"ef381415-db5b-11e6-b44c-9a02921ce06a\",\"apiVersion\":\"extensions\",\"resourceVersion\":\"5664\"}}\n"
+        },
+        "ownerReferences": [
+          {
+            "apiVersion": "extensions/v1beta1",
+            "kind": "ReplicaSet",
+            "name": "hello-minikube-3015430129",
+            "uid": "ef381415-db5b-11e6-b44c-9a02921ce06a",
+            "controller": true
+          }
+        ]
+      },
+      "spec": {
+        "volumes": [
+          {
+            "name": "default-token-cv496",
+            "secret": {
+              "secretName": "default-token-cv496",
+              "defaultMode": 420
+            }
+          }
+        ],
+        "containers": [
+          {
+            "name": "hello-minikube",
+            "image": "gcr.io/google_containers/echoserver:1.4",
+            "ports": [
+              {
+                "containerPort": 8080,
+                "protocol": "TCP"
+              }
+            ],
+            "resources": {},
+            "volumeMounts": [
+              {
+                "name": "default-token-cv496",
+                "readOnly": true,
+                "mountPath": "/var/run/secrets/kubernetes.io/serviceaccount"
+              }
+            ],
+            "terminationMessagePath": "/dev/termination-log",
+            "imagePullPolicy": "IfNotPresent"
+          }
+        ],
+        "restartPolicy": "Always",
+        "terminationGracePeriodSeconds": 30,
+        "dnsPolicy": "ClusterFirst",
+        "serviceAccountName": "default",
+        "serviceAccount": "default",
+        "nodeName": "minikube",
+        "securityContext": {}
+      },
+      "status": {
+        "phase": "Running",
+        "conditions": [
+          {
+            "type": "Initialized",
+            "status": "True",
+            "lastProbeTime": null,
+            "lastTransitionTime": "2017-01-15T19:50:58Z"
+          },
+          {
+            "type": "Ready",
+            "status": "True",
+            "lastProbeTime": null,
+            "lastTransitionTime": "2017-01-15T19:51:07Z"
+          },
+          {
+            "type": "PodScheduled",
+            "status": "True",
+            "lastProbeTime": null,
+            "lastTransitionTime": "2017-01-15T19:50:58Z"
+          }
+        ],
+        "hostIP": "192.168.64.3",
+        "podIP": "172.17.0.4",
+        "startTime": "2017-01-15T19:50:58Z",
+        "containerStatuses": [
+          {
+            "name": "hello-minikube",
+            "state": {
+              "running": {
+                "startedAt": "2017-01-15T19:51:07Z"
+              }
+            },
+            "lastState": {},
+            "ready": true,
+            "restartCount": 0,
+            "image": "gcr.io/google_containers/echoserver:1.4",
+            "imageID": "docker://sha256:a90209bb39e3d7b5fc9daf60c17044ea969aaca0333d672d8c7a34c7446e7ff7",
+            "containerID": "docker://50ae68d1f928ab1c0c29b2177e5b072d94eeaa217fb094476ccfb922e7192c23"
+          }
+        ]
+      }
+    },
+    {
+      "metadata": {
+        "name": "kube-addon-manager-minikube",
+        "namespace": "kube-system",
+        "selfLink": "/api/v1/namespaces/kube-system/pods/kube-addon-manager-minikube",
+        "uid": "48050f2f-db50-11e6-b44c-9a02921ce06a",
+        "resourceVersion": "64",
+        "creationTimestamp": "2017-01-15T18:27:33Z",
+        "labels": {
+          "component": "kube-addon-manager",
+          "kubernetes.io/minikube-addons": "addon-manager",
+          "version": "v6.1"
+        },
+        "annotations": {
+          "kubernetes.io/config.hash": "014fb8f91f3d52450a942179a984bc15",
+          "kubernetes.io/config.mirror": "014fb8f91f3d52450a942179a984bc15",
+          "kubernetes.io/config.seen": "2017-01-15T18:27:28.321732568Z",
+          "kubernetes.io/config.source": "file"
+        }
+      },
+      "spec": {
+        "volumes": [
+          {
+            "name": "addons",
+            "hostPath": {
+              "path": "/etc/kubernetes/"
+            }
+          }
+        ],
+        "containers": [
+          {
+            "name": "kube-addon-manager",
+            "image": "gcr.io/google-containers/kube-addon-manager:v6.1",
+            "resources": {
+              "requests": {
+                "cpu": "5m",
+                "memory": "50Mi"
+              }
+            },
+            "volumeMounts": [
+              {
+                "name": "addons",
+                "readOnly": true,
+                "mountPath": "/etc/kubernetes/"
+              }
+            ],
+            "terminationMessagePath": "/dev/termination-log",
+            "imagePullPolicy": "IfNotPresent"
+          }
+        ],
+        "restartPolicy": "Always",
+        "terminationGracePeriodSeconds": 30,
+        "dnsPolicy": "ClusterFirst",
+        "nodeName": "minikube",
+        "hostNetwork": true,
+        "securityContext": {}
+      },
+      "status": {
+        "phase": "Running",
+        "conditions": [
+          {
+            "type": "Initialized",
+            "status": "True",
+            "lastProbeTime": null,
+            "lastTransitionTime": "2017-01-15T18:27:33Z"
+          },
+          {
+            "type": "Ready",
+            "status": "True",
+            "lastProbeTime": null,
+            "lastTransitionTime": "2017-01-15T18:27:40Z"
+          },
+          {
+            "type": "PodScheduled",
+            "status": "True",
+            "lastProbeTime": null,
+            "lastTransitionTime": "2017-01-15T18:27:33Z"
+          }
+        ],
+        "hostIP": "192.168.64.3",
+        "podIP": "192.168.64.3",
+        "startTime": "2017-01-15T18:27:33Z",
+        "containerStatuses": [
+          {
+            "name": "kube-addon-manager",
+            "state": {
+              "running": {
+                "startedAt": "2017-01-15T18:27:40Z"
+              }
+            },
+            "lastState": {},
+            "ready": true,
+            "restartCount": 0,
+            "image": "gcr.io/google-containers/kube-addon-manager:v6.1",
+            "imageID": "docker://sha256:59e1315aa5ff25b5185a6b62be8cd86dc9cad4fdaf1e5d957e217e2da6dce653",
+            "containerID": "docker://33a3a22b75dc84623c76614e35ead6517aec19e70ba10727a76b31c41a8abe33"
+          }
+        ]
+      }
+    },
+    {
+      "metadata": {
+        "name": "kube-dns-v20-df1rz",
+        "generateName": "kube-dns-v20-",
+        "namespace": "kube-system",
+        "selfLink": "/api/v1/namespaces/kube-system/pods/kube-dns-v20-df1rz",
+        "uid": "4ce6ae60-db50-11e6-b44c-9a02921ce06a",
+        "resourceVersion": "133",
+        "creationTimestamp": "2017-01-15T18:27:41Z",
+        "labels": {
+          "k8s-app": "kube-dns",
+          "version": "v20"
+        },
+        "annotations": {
+          "kubernetes.io/created-by": "{\"kind\":\"SerializedReference\",\"apiVersion\":\"v1\",\"reference\":{\"kind\":\"ReplicationController\",\"namespace\":\"kube-system\",\"name\":\"kube-dns-v20\",\"uid\":\"4cda3e3a-db50-11e6-b44c-9a02921ce06a\",\"apiVersion\":\"v1\",\"resourceVersion\":\"79\"}}\n",
+          "scheduler.alpha.kubernetes.io/critical-pod": "",
+          "scheduler.alpha.kubernetes.io/tolerations": "[{\"key\":\"CriticalAddonsOnly\", \"operator\":\"Exists\"}]"
+        },
+        "ownerReferences": [
+          {
+            "apiVersion": "v1",
+            "kind": "ReplicationController",
+            "name": "kube-dns-v20",
+            "uid": "4cda3e3a-db50-11e6-b44c-9a02921ce06a",
+            "controller": true
+          }
+        ]
+      },
+      "spec": {
+        "volumes": [
+          {
+            "name": "default-token-sgfbc",
+            "secret": {
+              "secretName": "default-token-sgfbc",
+              "defaultMode": 420
+            }
+          }
+        ],
+        "containers": [
+          {
+            "name": "kubedns",
+            "image": "gcr.io/google_containers/kubedns-amd64:1.8",
+            "args": [
+              "--domain=cluster.local.",
+              "--dns-port=10053"
+            ],
+            "ports": [
+              {
+                "name": "dns-local",
+                "containerPort": 10053,
+                "protocol": "UDP"
+              },
+              {
+                "name": "dns-tcp-local",
+                "containerPort": 10053,
+                "protocol": "TCP"
+              }
+            ],
+            "resources": {
+              "limits": {
+                "memory": "170Mi"
+              },
+              "requests": {
+                "cpu": "100m",
+                "memory": "70Mi"
+              }
+            },
+            "volumeMounts": [
+              {
+                "name": "default-token-sgfbc",
+                "readOnly": true,
+                "mountPath": "/var/run/secrets/kubernetes.io/serviceaccount"
+              }
+            ],
+            "livenessProbe": {
+              "httpGet": {
+                "path": "/healthz-kubedns",
+                "port": 8080,
+                "scheme": "HTTP"
+              },
+              "initialDelaySeconds": 60,
+              "timeoutSeconds": 5,
+              "periodSeconds": 10,
+              "successThreshold": 1,
+              "failureThreshold": 5
+            },
+            "readinessProbe": {
+              "httpGet": {
+                "path": "/readiness",
+                "port": 8081,
+                "scheme": "HTTP"
+              },
+              "initialDelaySeconds": 3,
+              "timeoutSeconds": 5,
+              "periodSeconds": 10,
+              "successThreshold": 1,
+              "failureThreshold": 3
+            },
+            "terminationMessagePath": "/dev/termination-log",
+            "imagePullPolicy": "IfNotPresent"
+          },
+          {
+            "name": "dnsmasq",
+            "image": "gcr.io/google_containers/kube-dnsmasq-amd64:1.4",
+            "args": [
+              "--cache-size=1000",
+              "--no-resolv",
+              "--server=127.0.0.1#10053",
+              "--log-facility=-"
+            ],
+            "ports": [
+              {
+                "name": "dns",
+                "containerPort": 53,
+                "protocol": "UDP"
+              },
+              {
+                "name": "dns-tcp",
+                "containerPort": 53,
+                "protocol": "TCP"
+              }
+            ],
+            "resources": {},
+            "volumeMounts": [
+              {
+                "name": "default-token-sgfbc",
+                "readOnly": true,
+                "mountPath": "/var/run/secrets/kubernetes.io/serviceaccount"
+              }
+            ],
+            "livenessProbe": {
+              "httpGet": {
+                "path": "/healthz-dnsmasq",
+                "port": 8080,
+                "scheme": "HTTP"
+              },
+              "initialDelaySeconds": 60,
+              "timeoutSeconds": 5,
+              "periodSeconds": 10,
+              "successThreshold": 1,
+              "failureThreshold": 5
+            },
+            "terminationMessagePath": "/dev/termination-log",
+            "imagePullPolicy": "IfNotPresent"
+          },
+          {
+            "name": "healthz",
+            "image": "gcr.io/google_containers/exechealthz-amd64:1.2",
+            "args": [
+              "--cmd=nslookup kubernetes.default.svc.cluster.local 127.0.0.1 \u003e/dev/null",
+              "--url=/healthz-dnsmasq",
+              "--cmd=nslookup kubernetes.default.svc.cluster.local 127.0.0.1:10053 \u003e/dev/null",
+              "--url=/healthz-kubedns",
+              "--port=8080",
+              "--quiet"
+            ],
+            "ports": [
+              {
+                "containerPort": 8080,
+                "protocol": "TCP"
+              }
+            ],
+            "resources": {
+              "limits": {
+                "memory": "50Mi"
+              },
+              "requests": {
+                "cpu": "10m",
+                "memory": "50Mi"
+              }
+            },
+            "volumeMounts": [
+              {
+                "name": "default-token-sgfbc",
+                "readOnly": true,
+                "mountPath": "/var/run/secrets/kubernetes.io/serviceaccount"
+              }
+            ],
+            "terminationMessagePath": "/dev/termination-log",
+            "imagePullPolicy": "IfNotPresent"
+          }
+        ],
+        "restartPolicy": "Always",
+        "terminationGracePeriodSeconds": 30,
+        "dnsPolicy": "Default",
+        "serviceAccountName": "default",
+        "serviceAccount": "default",
+        "nodeName": "minikube",
+        "securityContext": {}
+      },
+      "status": {
+        "phase": "Running",
+        "conditions": [
+          {
+            "type": "Initialized",
+            "status": "True",
+            "lastProbeTime": null,
+            "lastTransitionTime": "2017-01-15T18:27:41Z"
+          },
+          {
+            "type": "Ready",
+            "status": "True",
+            "lastProbeTime": null,
+            "lastTransitionTime": "2017-01-15T18:28:01Z"
+          },
+          {
+            "type": "PodScheduled",
+            "status": "True",
+            "lastProbeTime": null,
+            "lastTransitionTime": "2017-01-15T18:27:41Z"
+          }
+        ],
+        "hostIP": "192.168.64.3",
+        "podIP": "172.17.0.3",
+        "startTime": "2017-01-15T18:27:41Z",
+        "containerStatuses": [
+          {
+            "name": "dnsmasq",
+            "state": {
+              "running": {
+                "startedAt": "2017-01-15T18:27:53Z"
+              }
+            },
+            "lastState": {},
+            "ready": true,
+            "restartCount": 0,
+            "image": "gcr.io/google_containers/kube-dnsmasq-amd64:1.4",
+            "imageID": "docker://sha256:3ec65756a89b70b4095e43a340a6e2d5696cac7a93a29619ff5c4b6be9af2773",
+            "containerID": "docker://4ec3ea93eb1a3d391288183924d3cb153e4075e3bc7ce2382987cea46201d9ed"
+          },
+          {
+            "name": "healthz",
+            "state": {
+              "running": {
+                "startedAt": "2017-01-15T18:27:55Z"
+              }
+            },
+            "lastState": {},
+            "ready": true,
+            "restartCount": 0,
+            "image": "gcr.io/google_containers/exechealthz-amd64:1.2",
+            "imageID": "docker://sha256:93a43bfb39bfe9795e76ccd75d7a0e6d40e2ae8563456a2a77c1b4cfc3bbd967",
+            "containerID": "docker://931d1635aa3a6076c6df33a87000ce4cbdddf39edd7f8660a6048f320544dd3a"
+          },
+          {
+            "name": "kubedns",
+            "state": {
+              "running": {
+                "startedAt": "2017-01-15T18:27:51Z"
+              }
+            },
+            "lastState": {},
+            "ready": true,
+            "restartCount": 0,
+            "image": "gcr.io/google_containers/kubedns-amd64:1.8",
+            "imageID": "docker://sha256:597a45ef55ec52401fdcd2e1d6ee53c74b04afb264490d7fa67b6d98ad330dfe",
+            "containerID": "docker://b5b329f0a7eb2c288d5cce0f3c2f547b72ac8f363e3dce68973d7f410e97a437"
+          }
+        ]
+      }
+    },
+    {
+      "metadata": {
+        "name": "kubernetes-dashboard-hzqh3",
+        "generateName": "kubernetes-dashboard-",
+        "namespace": "kube-system",
+        "selfLink": "/api/v1/namespaces/kube-system/pods/kubernetes-dashboard-hzqh3",
+        "uid": "4cb4fbc3-db50-11e6-b44c-9a02921ce06a",
+        "resourceVersion": "101",
+        "creationTimestamp": "2017-01-15T18:27:41Z",
+        "labels": {
+          "app": "kubernetes-dashboard",
+          "kubernetes.io/cluster-service": "true",
+          "version": "v1.5.0"
+        },
+        "annotations": {
+          "kubernetes.io/created-by": "{\"kind\":\"SerializedReference\",\"apiVersion\":\"v1\",\"reference\":{\"kind\":\"ReplicationController\",\"namespace\":\"kube-system\",\"name\":\"kubernetes-dashboard\",\"uid\":\"4cb12331-db50-11e6-b44c-9a02921ce06a\",\"apiVersion\":\"v1\",\"resourceVersion\":\"66\"}}\n"
+        },
+        "ownerReferences": [
+          {
+            "apiVersion": "v1",
+            "kind": "ReplicationController",
+            "name": "kubernetes-dashboard",
+            "uid": "4cb12331-db50-11e6-b44c-9a02921ce06a",
+            "controller": true
+          }
+        ]
+      },
+      "spec": {
+        "volumes": [
+          {
+            "name": "default-token-sgfbc",
+            "secret": {
+              "secretName": "default-token-sgfbc",
+              "defaultMode": 420
+            }
+          }
+        ],
+        "containers": [
+          {
+            "name": "kubernetes-dashboard",
+            "image": "gcr.io/google_containers/kubernetes-dashboard-amd64:v1.5.0",
+            "ports": [
+              {
+                "containerPort": 9090,
+                "protocol": "TCP"
+              }
+            ],
+            "resources": {},
+            "volumeMounts": [
+              {
+                "name": "default-token-sgfbc",
+                "readOnly": true,
+                "mountPath": "/var/run/secrets/kubernetes.io/serviceaccount"
+              }
+            ],
+            "livenessProbe": {
+              "httpGet": {
+                "path": "/",
+                "port": 9090,
+                "scheme": "HTTP"
+              },
+              "initialDelaySeconds": 30,
+              "timeoutSeconds": 30,
+              "periodSeconds": 10,
+              "successThreshold": 1,
+              "failureThreshold": 3
+            },
+            "terminationMessagePath": "/dev/termination-log",
+            "imagePullPolicy": "IfNotPresent"
+          }
+        ],
+        "restartPolicy": "Always",
+        "terminationGracePeriodSeconds": 30,
+        "dnsPolicy": "ClusterFirst",
+        "serviceAccountName": "default",
+        "serviceAccount": "default",
+        "nodeName": "minikube",
+        "securityContext": {}
+      },
+      "status": {
+        "phase": "Running",
+        "conditions": [
+          {
+            "type": "Initialized",
+            "status": "True",
+            "lastProbeTime": null,
+            "lastTransitionTime": "2017-01-15T18:27:41Z"
+          },
+          {
+            "type": "Ready",
+            "status": "True",
+            "lastProbeTime": null,
+            "lastTransitionTime": "2017-01-15T18:27:47Z"
+          },
+          {
+            "type": "PodScheduled",
+            "status": "True",
+            "lastProbeTime": null,
+            "lastTransitionTime": "2017-01-15T18:27:41Z"
+          }
+        ],
+        "hostIP": "192.168.64.3",
+        "podIP": "172.17.0.2",
+        "startTime": "2017-01-15T18:27:41Z",
+        "containerStatuses": [
+          {
+            "name": "kubernetes-dashboard",
+            "state": {
+              "running": {
+                "startedAt": "2017-01-15T18:27:47Z"
+              }
+            },
+            "lastState": {},
+            "ready": true,
+            "restartCount": 0,
+            "image": "gcr.io/google_containers/kubernetes-dashboard-amd64:v1.5.0",
+            "imageID": "docker://sha256:e5133bac8024ac6c916f16df8790259b5504a800766bee87dcf90ec7d634a418",
+            "containerID": "docker://922f05ac23190b5a18ab4bdc18a7847dade0dc51ad2eaf4486b3c171176b366f"
+          }
+        ]
+      }
+    }
+  ]
+}
