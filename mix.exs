@@ -30,7 +30,7 @@ defmodule Bot.Mixfile do
   defp deps do
     [
       {:poison, "~> 3.0"},
-      {:httpotion, "~> 3.0.2"}
+      {:httpoison, "~> 0.10.0"},
     ]
   end
 end

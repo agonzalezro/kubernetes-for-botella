@@ -41,11 +41,16 @@ defmodule Handler do
 end
 
 defmodule Kubernetes do
-  @url "http://390483c3.ngrok.io"
-  # @url "http://127.0.0.1:8001"
+  @apiserver Application.get_env(:bot, :apiserver)
+  @token Application.get_env(:bot, :token)
+
+  def headers do
+    ["Authorization": "Bearer #{@token}"]
+  end
 
   def pods do
-    HTTPotion.get("#{@url}/api/v1/pods").body
+    {:ok, response} = HTTPoison.get("#{@apiserver}/api/v1/pods", headers(), hackney: [:insecure])
+    response.body
   end
 end
 
