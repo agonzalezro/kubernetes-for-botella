@@ -1,6 +1,8 @@
 kubernetes-for-botella
 ======================
 
+**NOTE: Beta POC, don't use for anything serious, don't laugh too much with the code :)**
+
 This is a plugin for [botella](https://agonzalezro.github.io/botella/), it's a POC to show how to interact with a Kubernetes cluster with botella.
 
 Usage
