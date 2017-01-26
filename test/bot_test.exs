@@ -6,6 +6,10 @@ defmodule BotTest do
     assert {:ok, &Handler.get_pods/0} == Bot.get_handler("get pods")
   end
 
+  test "it understand when it's asked about services" do
+    assert {:ok, &Handler.get_services/0} == Bot.get_handler("get services")
+  end
+
   test "it doesn't understand some random phrase" do
     assert {:nothandled, &Handler.nop/0} == Bot.get_handler("some random stuff")
   end
@@ -21,5 +25,9 @@ defmodule HandlerTest do
 
   test "it returns a list of pods" do
     assert Handler.get_pods == "Your running pods are: hello-minikube-3015430129-hhmmm, kube-addon-manager-minikube, kube-dns-v20-df1rz, kubernetes-dashboard-hzqh3"
+  end
+
+  test "it returns a list of services" do
+    assert Handler.get_services == "Your running services are: kubernetes, nginx-ingress"
   end
 end

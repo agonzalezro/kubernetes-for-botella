@@ -1,0 +1,78 @@
+{
+  "kind": "ServiceList",
+  "apiVersion": "v1",
+  "metadata": {
+    "selfLink": "/api/v1/services",
+    "resourceVersion": "976905"
+  },
+  "items": [
+    {
+      "metadata": {
+        "name": "kubernetes",
+        "namespace": "default",
+        "selfLink": "/api/v1/namespaces/default/services/kubernetes",
+        "uid": "13789049-d8b7-11e6-be5d-02469219e27f",
+        "resourceVersion": "7",
+        "creationTimestamp": "2017-01-12T11:05:49Z",
+        "labels": {
+          "component": "apiserver",
+          "provider": "kubernetes"
+        }
+      },
+      "spec": {
+        "ports": [
+          {
+            "name": "https",
+            "protocol": "TCP",
+            "port": 443,
+            "targetPort": 443
+          }
+        ],
+        "clusterIP": "100.64.0.1",
+        "type": "ClusterIP",
+        "sessionAffinity": "ClientIP"
+      },
+      "status": {
+        "loadBalancer": {}
+      }
+    },
+    {
+      "metadata": {
+        "name": "nginx-ingress",
+        "namespace": "default",
+        "selfLink": "/api/v1/namespaces/default/services/nginx-ingress",
+        "uid": "7e04c31c-dd78-11e6-be5d-02469219e27f",
+        "resourceVersion": "962422",
+        "creationTimestamp": "2017-01-18T12:20:26Z",
+        "labels": {
+          "k8s-app": "nginx-ingress-lb"
+        }
+      },
+      "spec": {
+        "ports": [
+          {
+            "protocol": "TCP",
+            "port": 80,
+            "targetPort": 80,
+            "nodePort": 32757
+          }
+        ],
+        "selector": {
+          "k8s-app": "nginx-ingress-lb"
+        },
+        "clusterIP": "100.71.226.250",
+        "type": "LoadBalancer",
+        "sessionAffinity": "None"
+      },
+      "status": {
+        "loadBalancer": {
+          "ingress": [
+            {
+              "hostname": "xxx.eu-west-1.elb.amazonaws.com"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
