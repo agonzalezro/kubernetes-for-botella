@@ -1,0 +1,995 @@
+{
+  "kind": "EventList",
+  "apiVersion": "v1",
+  "metadata": {
+    "selfLink": "/api/v1/events",
+    "resourceVersion": "4515"
+  },
+  "items": [
+    {
+      "metadata": {
+        "name": "botella-deployment-409369321-d9bpf.149d51edb9944758",
+        "namespace": "default",
+        "selfLink": "/api/v1/namespaces/default/events/botella-deployment-409369321-d9bpf.149d51edb9944758",
+        "uid": "888fdf63-e3c2-11e6-8c62-4a707d996522",
+        "resourceVersion": "3403",
+        "creationTimestamp": "2017-01-26T12:25:33Z"
+      },
+      "involvedObject": {
+        "kind": "Pod",
+        "namespace": "default",
+        "name": "botella-deployment-409369321-d9bpf",
+        "uid": "888a9ef9-e3c2-11e6-8c62-4a707d996522",
+        "apiVersion": "v1",
+        "resourceVersion": "3398"
+      },
+      "reason": "Scheduled",
+      "message": "Successfully assigned botella-deployment-409369321-d9bpf to minikube",
+      "source": {
+        "component": "default-scheduler"
+      },
+      "firstTimestamp": "2017-01-26T12:25:33Z",
+      "lastTimestamp": "2017-01-26T12:25:33Z",
+      "count": 1,
+      "type": "Normal"
+    },
+    {
+      "metadata": {
+        "name": "botella-deployment-409369321-d9bpf.149d51ede8e515bf",
+        "namespace": "default",
+        "selfLink": "/api/v1/namespaces/default/events/botella-deployment-409369321-d9bpf.149d51ede8e515bf",
+        "uid": "890900bd-e3c2-11e6-8c62-4a707d996522",
+        "resourceVersion": "3409",
+        "creationTimestamp": "2017-01-26T12:25:34Z"
+      },
+      "involvedObject": {
+        "kind": "Pod",
+        "namespace": "default",
+        "name": "botella-deployment-409369321-d9bpf",
+        "uid": "888a9ef9-e3c2-11e6-8c62-4a707d996522",
+        "apiVersion": "v1",
+        "resourceVersion": "3402",
+        "fieldPath": "spec.containers{botella}"
+      },
+      "reason": "Pulling",
+      "message": "pulling image \"agonzalezro/botella:0.1.4\"",
+      "source": {
+        "component": "kubelet",
+        "host": "minikube"
+      },
+      "firstTimestamp": "2017-01-26T12:25:34Z",
+      "lastTimestamp": "2017-01-26T12:25:34Z",
+      "count": 1,
+      "type": "Normal"
+    },
+    {
+      "metadata": {
+        "name": "botella-deployment-409369321-d9bpf.149d51ee4aee8557",
+        "namespace": "default",
+        "selfLink": "/api/v1/namespaces/default/events/botella-deployment-409369321-d9bpf.149d51ee4aee8557",
+        "uid": "8a03beb3-e3c2-11e6-8c62-4a707d996522",
+        "resourceVersion": "3411",
+        "creationTimestamp": "2017-01-26T12:25:36Z"
+      },
+      "involvedObject": {
+        "kind": "Pod",
+        "namespace": "default",
+        "name": "botella-deployment-409369321-d9bpf",
+        "uid": "888a9ef9-e3c2-11e6-8c62-4a707d996522",
+        "apiVersion": "v1",
+        "resourceVersion": "3402",
+        "fieldPath": "spec.containers{botella}"
+      },
+      "reason": "Pulled",
+      "message": "Successfully pulled image \"agonzalezro/botella:0.1.4\"",
+      "source": {
+        "component": "kubelet",
+        "host": "minikube"
+      },
+      "firstTimestamp": "2017-01-26T12:25:36Z",
+      "lastTimestamp": "2017-01-26T12:25:36Z",
+      "count": 1,
+      "type": "Normal"
+    },
+    {
+      "metadata": {
+        "name": "botella-deployment-409369321-d9bpf.149d51ee51971d49",
+        "namespace": "default",
+        "selfLink": "/api/v1/namespaces/default/events/botella-deployment-409369321-d9bpf.149d51ee51971d49",
+        "uid": "8a14ccfb-e3c2-11e6-8c62-4a707d996522",
+        "resourceVersion": "3412",
+        "creationTimestamp": "2017-01-26T12:25:36Z"
+      },
+      "involvedObject": {
+        "kind": "Pod",
+        "namespace": "default",
+        "name": "botella-deployment-409369321-d9bpf",
+        "uid": "888a9ef9-e3c2-11e6-8c62-4a707d996522",
+        "apiVersion": "v1",
+        "resourceVersion": "3402",
+        "fieldPath": "spec.containers{botella}"
+      },
+      "reason": "Created",
+      "message": "Created container with docker id 71218e84e6b7; Security:[seccomp=unconfined]",
+      "source": {
+        "component": "kubelet",
+        "host": "minikube"
+      },
+      "firstTimestamp": "2017-01-26T12:25:36Z",
+      "lastTimestamp": "2017-01-26T12:25:36Z",
+      "count": 1,
+      "type": "Normal"
+    },
+    {
+      "metadata": {
+        "name": "botella-deployment-409369321-d9bpf.149d51ee57bc7f0a",
+        "namespace": "default",
+        "selfLink": "/api/v1/namespaces/default/events/botella-deployment-409369321-d9bpf.149d51ee57bc7f0a",
+        "uid": "8a2481c7-e3c2-11e6-8c62-4a707d996522",
+        "resourceVersion": "3413",
+        "creationTimestamp": "2017-01-26T12:25:36Z"
+      },
+      "involvedObject": {
+        "kind": "Pod",
+        "namespace": "default",
+        "name": "botella-deployment-409369321-d9bpf",
+        "uid": "888a9ef9-e3c2-11e6-8c62-4a707d996522",
+        "apiVersion": "v1",
+        "resourceVersion": "3402",
+        "fieldPath": "spec.containers{botella}"
+      },
+      "reason": "Started",
+      "message": "Started container with docker id 71218e84e6b7",
+      "source": {
+        "component": "kubelet",
+        "host": "minikube"
+      },
+      "firstTimestamp": "2017-01-26T12:25:36Z",
+      "lastTimestamp": "2017-01-26T12:25:36Z",
+      "count": 1,
+      "type": "Normal"
+    },
+    {
+      "metadata": {
+        "name": "botella-deployment-409369321-n6s12.149d510137b31180",
+        "namespace": "default",
+        "selfLink": "/api/v1/namespaces/default/events/botella-deployment-409369321-n6s12.149d510137b31180",
+        "uid": "2b1b2344-e3c0-11e6-8c62-4a707d996522",
+        "resourceVersion": "2245",
+        "creationTimestamp": "2017-01-26T12:08:37Z"
+      },
+      "involvedObject": {
+        "kind": "Pod",
+        "namespace": "default",
+        "name": "botella-deployment-409369321-n6s12",
+        "uid": "2b114719-e3c0-11e6-8c62-4a707d996522",
+        "apiVersion": "v1",
+        "resourceVersion": "2239"
+      },
+      "reason": "Scheduled",
+      "message": "Successfully assigned botella-deployment-409369321-n6s12 to minikube",
+      "source": {
+        "component": "default-scheduler"
+      },
+      "firstTimestamp": "2017-01-26T12:08:37Z",
+      "lastTimestamp": "2017-01-26T12:08:37Z",
+      "count": 1,
+      "type": "Normal"
+    },
+    {
+      "metadata": {
+        "name": "botella-deployment-409369321-n6s12.149d5101687bfb2c",
+        "namespace": "default",
+        "selfLink": "/api/v1/namespaces/default/events/botella-deployment-409369321-n6s12.149d5101687bfb2c",
+        "uid": "2b97322e-e3c0-11e6-8c62-4a707d996522",
+        "resourceVersion": "2248",
+        "creationTimestamp": "2017-01-26T12:08:38Z"
+      },
+      "involvedObject": {
+        "kind": "Pod",
+        "namespace": "default",
+        "name": "botella-deployment-409369321-n6s12",
+        "uid": "2b114719-e3c0-11e6-8c62-4a707d996522",
+        "apiVersion": "v1",
+        "resourceVersion": "2241",
+        "fieldPath": "spec.containers{botella}"
+      },
+      "reason": "Pulling",
+      "message": "pulling image \"agonzalezro/botella:0.1.4\"",
+      "source": {
+        "component": "kubelet",
+        "host": "minikube"
+      },
+      "firstTimestamp": "2017-01-26T12:08:38Z",
+      "lastTimestamp": "2017-01-26T12:08:38Z",
+      "count": 1,
+      "type": "Normal"
+    },
+    {
+      "metadata": {
+        "name": "botella-deployment-409369321-n6s12.149d5101f10b71e5",
+        "namespace": "default",
+        "selfLink": "/api/v1/namespaces/default/events/botella-deployment-409369321-n6s12.149d5101f10b71e5",
+        "uid": "2cf51015-e3c0-11e6-8c62-4a707d996522",
+        "resourceVersion": "2251",
+        "creationTimestamp": "2017-01-26T12:08:40Z"
+      },
+      "involvedObject": {
+        "kind": "Pod",
+        "namespace": "default",
+        "name": "botella-deployment-409369321-n6s12",
+        "uid": "2b114719-e3c0-11e6-8c62-4a707d996522",
+        "apiVersion": "v1",
+        "resourceVersion": "2241",
+        "fieldPath": "spec.containers{botella}"
+      },
+      "reason": "Pulled",
+      "message": "Successfully pulled image \"agonzalezro/botella:0.1.4\"",
+      "source": {
+        "component": "kubelet",
+        "host": "minikube"
+      },
+      "firstTimestamp": "2017-01-26T12:08:40Z",
+      "lastTimestamp": "2017-01-26T12:08:40Z",
+      "count": 1,
+      "type": "Normal"
+    },
+    {
+      "metadata": {
+        "name": "botella-deployment-409369321-n6s12.149d5101fd09840d",
+        "namespace": "default",
+        "selfLink": "/api/v1/namespaces/default/events/botella-deployment-409369321-n6s12.149d5101fd09840d",
+        "uid": "2d14303d-e3c0-11e6-8c62-4a707d996522",
+        "resourceVersion": "2253",
+        "creationTimestamp": "2017-01-26T12:08:41Z"
+      },
+      "involvedObject": {
+        "kind": "Pod",
+        "namespace": "default",
+        "name": "botella-deployment-409369321-n6s12",
+        "uid": "2b114719-e3c0-11e6-8c62-4a707d996522",
+        "apiVersion": "v1",
+        "resourceVersion": "2241",
+        "fieldPath": "spec.containers{botella}"
+      },
+      "reason": "Created",
+      "message": "Created container with docker id 7d08387eff00; Security:[seccomp=unconfined]",
+      "source": {
+        "component": "kubelet",
+        "host": "minikube"
+      },
+      "firstTimestamp": "2017-01-26T12:08:41Z",
+      "lastTimestamp": "2017-01-26T12:08:41Z",
+      "count": 1,
+      "type": "Normal"
+    },
+    {
+      "metadata": {
+        "name": "botella-deployment-409369321-n6s12.149d5102053a5c7c",
+        "namespace": "default",
+        "selfLink": "/api/v1/namespaces/default/events/botella-deployment-409369321-n6s12.149d5102053a5c7c",
+        "uid": "2d285af9-e3c0-11e6-8c62-4a707d996522",
+        "resourceVersion": "2254",
+        "creationTimestamp": "2017-01-26T12:08:41Z"
+      },
+      "involvedObject": {
+        "kind": "Pod",
+        "namespace": "default",
+        "name": "botella-deployment-409369321-n6s12",
+        "uid": "2b114719-e3c0-11e6-8c62-4a707d996522",
+        "apiVersion": "v1",
+        "resourceVersion": "2241",
+        "fieldPath": "spec.containers{botella}"
+      },
+      "reason": "Started",
+      "message": "Started container with docker id 7d08387eff00",
+      "source": {
+        "component": "kubelet",
+        "host": "minikube"
+      },
+      "firstTimestamp": "2017-01-26T12:08:41Z",
+      "lastTimestamp": "2017-01-26T12:08:41Z",
+      "count": 1,
+      "type": "Normal"
+    },
+    {
+      "metadata": {
+        "name": "botella-deployment-409369321-n6s12.149d51ec0fd83dd9",
+        "namespace": "default",
+        "selfLink": "/api/v1/namespaces/default/events/botella-deployment-409369321-n6s12.149d51ec0fd83dd9",
+        "uid": "844f75cc-e3c2-11e6-8c62-4a707d996522",
+        "resourceVersion": "3378",
+        "creationTimestamp": "2017-01-26T12:25:26Z"
+      },
+      "involvedObject": {
+        "kind": "Pod",
+        "namespace": "default",
+        "name": "botella-deployment-409369321-n6s12",
+        "uid": "2b114719-e3c0-11e6-8c62-4a707d996522",
+        "apiVersion": "v1",
+        "resourceVersion": "2241",
+        "fieldPath": "spec.containers{botella}"
+      },
+      "reason": "Killing",
+      "message": "Killing container with docker id 7d08387eff00: Need to kill pod.",
+      "source": {
+        "component": "kubelet",
+        "host": "minikube"
+      },
+      "firstTimestamp": "2017-01-26T12:25:26Z",
+      "lastTimestamp": "2017-01-26T12:25:26Z",
+      "count": 1,
+      "type": "Normal"
+    },
+    {
+      "metadata": {
+        "name": "botella-deployment-409369321.149d510135c710b2",
+        "namespace": "default",
+        "selfLink": "/api/v1/namespaces/default/events/botella-deployment-409369321.149d510135c710b2",
+        "uid": "2b157007-e3c0-11e6-8c62-4a707d996522",
+        "resourceVersion": "2240",
+        "creationTimestamp": "2017-01-26T12:08:37Z"
+      },
+      "involvedObject": {
+        "kind": "ReplicaSet",
+        "namespace": "default",
+        "name": "botella-deployment-409369321",
+        "uid": "2b0d408a-e3c0-11e6-8c62-4a707d996522",
+        "apiVersion": "extensions",
+        "resourceVersion": "2236"
+      },
+      "reason": "SuccessfulCreate",
+      "message": "Created pod: botella-deployment-409369321-n6s12",
+      "source": {
+        "component": "replicaset-controller"
+      },
+      "firstTimestamp": "2017-01-26T12:08:37Z",
+      "lastTimestamp": "2017-01-26T12:08:37Z",
+      "count": 1,
+      "type": "Normal"
+    },
+    {
+      "metadata": {
+        "name": "botella-deployment-409369321.149d51ec09ef198b",
+        "namespace": "default",
+        "selfLink": "/api/v1/namespaces/default/events/botella-deployment-409369321.149d51ec09ef198b",
+        "uid": "8440efe4-e3c2-11e6-8c62-4a707d996522",
+        "resourceVersion": "3374",
+        "creationTimestamp": "2017-01-26T12:25:26Z"
+      },
+      "involvedObject": {
+        "kind": "ReplicaSet",
+        "namespace": "default",
+        "name": "botella-deployment-409369321",
+        "uid": "2b0d408a-e3c0-11e6-8c62-4a707d996522",
+        "apiVersion": "extensions",
+        "resourceVersion": "3370"
+      },
+      "reason": "SuccessfulDelete",
+      "message": "Deleted pod: botella-deployment-409369321-n6s12",
+      "source": {
+        "component": "replicaset-controller"
+      },
+      "firstTimestamp": "2017-01-26T12:25:26Z",
+      "lastTimestamp": "2017-01-26T12:25:26Z",
+      "count": 1,
+      "type": "Normal"
+    },
+    {
+      "metadata": {
+        "name": "botella-deployment-409369321.149d51edb899c36e",
+        "namespace": "default",
+        "selfLink": "/api/v1/namespaces/default/events/botella-deployment-409369321.149d51edb899c36e",
+        "uid": "888d9149-e3c2-11e6-8c62-4a707d996522",
+        "resourceVersion": "3400",
+        "creationTimestamp": "2017-01-26T12:25:33Z"
+      },
+      "involvedObject": {
+        "kind": "ReplicaSet",
+        "namespace": "default",
+        "name": "botella-deployment-409369321",
+        "uid": "8886c208-e3c2-11e6-8c62-4a707d996522",
+        "apiVersion": "extensions",
+        "resourceVersion": "3395"
+      },
+      "reason": "SuccessfulCreate",
+      "message": "Created pod: botella-deployment-409369321-d9bpf",
+      "source": {
+        "component": "replicaset-controller"
+      },
+      "firstTimestamp": "2017-01-26T12:25:33Z",
+      "lastTimestamp": "2017-01-26T12:25:33Z",
+      "count": 1,
+      "type": "Normal"
+    },
+    {
+      "metadata": {
+        "name": "botella-deployment-623040315-pwkm4.149d4f889b181a07",
+        "namespace": "default",
+        "selfLink": "/api/v1/namespaces/default/events/botella-deployment-623040315-pwkm4.149d4f889b181a07",
+        "uid": "66fa114b-e3bc-11e6-8c62-4a707d996522",
+        "resourceVersion": "417",
+        "creationTimestamp": "2017-01-26T11:41:40Z"
+      },
+      "involvedObject": {
+        "kind": "Pod",
+        "namespace": "default",
+        "name": "botella-deployment-623040315-pwkm4",
+        "uid": "66f51b1f-e3bc-11e6-8c62-4a707d996522",
+        "apiVersion": "v1",
+        "resourceVersion": "411"
+      },
+      "reason": "Scheduled",
+      "message": "Successfully assigned botella-deployment-623040315-pwkm4 to minikube",
+      "source": {
+        "component": "default-scheduler"
+      },
+      "firstTimestamp": "2017-01-26T11:41:40Z",
+      "lastTimestamp": "2017-01-26T11:41:40Z",
+      "count": 1,
+      "type": "Normal"
+    },
+    {
+      "metadata": {
+        "name": "botella-deployment-623040315-pwkm4.149d4f88c4f84f0c",
+        "namespace": "default",
+        "selfLink": "/api/v1/namespaces/default/events/botella-deployment-623040315-pwkm4.149d4f88c4f84f0c",
+        "uid": "67652117-e3bc-11e6-8c62-4a707d996522",
+        "resourceVersion": "422",
+        "creationTimestamp": "2017-01-26T11:41:40Z"
+      },
+      "involvedObject": {
+        "kind": "Pod",
+        "namespace": "default",
+        "name": "botella-deployment-623040315-pwkm4",
+        "uid": "66f51b1f-e3bc-11e6-8c62-4a707d996522",
+        "apiVersion": "v1",
+        "resourceVersion": "415",
+        "fieldPath": "spec.containers{kubectl-proxy}"
+      },
+      "reason": "Pulled",
+      "message": "Container image \"lachlanevenson/k8s-kubectl:v1.5.2\" already present on machine",
+      "source": {
+        "component": "kubelet",
+        "host": "minikube"
+      },
+      "firstTimestamp": "2017-01-26T11:41:40Z",
+      "lastTimestamp": "2017-01-26T11:41:40Z",
+      "count": 1,
+      "type": "Normal"
+    },
+    {
+      "metadata": {
+        "name": "botella-deployment-623040315-pwkm4.149d4f88ccea87ff",
+        "namespace": "default",
+        "selfLink": "/api/v1/namespaces/default/events/botella-deployment-623040315-pwkm4.149d4f88ccea87ff",
+        "uid": "67797c05-e3bc-11e6-8c62-4a707d996522",
+        "resourceVersion": "423",
+        "creationTimestamp": "2017-01-26T11:41:41Z"
+      },
+      "involvedObject": {
+        "kind": "Pod",
+        "namespace": "default",
+        "name": "botella-deployment-623040315-pwkm4",
+        "uid": "66f51b1f-e3bc-11e6-8c62-4a707d996522",
+        "apiVersion": "v1",
+        "resourceVersion": "415",
+        "fieldPath": "spec.containers{kubectl-proxy}"
+      },
+      "reason": "Created",
+      "message": "Created container with docker id e3c5610b5795; Security:[seccomp=unconfined]",
+      "source": {
+        "component": "kubelet",
+        "host": "minikube"
+      },
+      "firstTimestamp": "2017-01-26T11:41:41Z",
+      "lastTimestamp": "2017-01-26T11:41:41Z",
+      "count": 1,
+      "type": "Normal"
+    },
+    {
+      "metadata": {
+        "name": "botella-deployment-623040315-pwkm4.149d4f88d41c82aa",
+        "namespace": "default",
+        "selfLink": "/api/v1/namespaces/default/events/botella-deployment-623040315-pwkm4.149d4f88d41c82aa",
+        "uid": "678bd765-e3bc-11e6-8c62-4a707d996522",
+        "resourceVersion": "424",
+        "creationTimestamp": "2017-01-26T11:41:41Z"
+      },
+      "involvedObject": {
+        "kind": "Pod",
+        "namespace": "default",
+        "name": "botella-deployment-623040315-pwkm4",
+        "uid": "66f51b1f-e3bc-11e6-8c62-4a707d996522",
+        "apiVersion": "v1",
+        "resourceVersion": "415",
+        "fieldPath": "spec.containers{kubectl-proxy}"
+      },
+      "reason": "Started",
+      "message": "Started container with docker id e3c5610b5795",
+      "source": {
+        "component": "kubelet",
+        "host": "minikube"
+      },
+      "firstTimestamp": "2017-01-26T11:41:41Z",
+      "lastTimestamp": "2017-01-26T11:41:41Z",
+      "count": 1,
+      "type": "Normal"
+    },
+    {
+      "metadata": {
+        "name": "botella-deployment-623040315-pwkm4.149d4f88d4bda983",
+        "namespace": "default",
+        "selfLink": "/api/v1/namespaces/default/events/botella-deployment-623040315-pwkm4.149d4f88d4bda983",
+        "uid": "678e3f19-e3bc-11e6-8c62-4a707d996522",
+        "resourceVersion": "425",
+        "creationTimestamp": "2017-01-26T11:41:41Z"
+      },
+      "involvedObject": {
+        "kind": "Pod",
+        "namespace": "default",
+        "name": "botella-deployment-623040315-pwkm4",
+        "uid": "66f51b1f-e3bc-11e6-8c62-4a707d996522",
+        "apiVersion": "v1",
+        "resourceVersion": "415",
+        "fieldPath": "spec.containers{botella}"
+      },
+      "reason": "Pulling",
+      "message": "pulling image \"agonzalezro/botella:0.1.4\"",
+      "source": {
+        "component": "kubelet",
+        "host": "minikube"
+      },
+      "firstTimestamp": "2017-01-26T11:41:41Z",
+      "lastTimestamp": "2017-01-26T11:41:41Z",
+      "count": 1,
+      "type": "Normal"
+    },
+    {
+      "metadata": {
+        "name": "botella-deployment-623040315-pwkm4.149d4f892b26e26d",
+        "namespace": "default",
+        "selfLink": "/api/v1/namespaces/default/events/botella-deployment-623040315-pwkm4.149d4f892b26e26d",
+        "uid": "686abd4e-e3bc-11e6-8c62-4a707d996522",
+        "resourceVersion": "428",
+        "creationTimestamp": "2017-01-26T11:41:42Z"
+      },
+      "involvedObject": {
+        "kind": "Pod",
+        "namespace": "default",
+        "name": "botella-deployment-623040315-pwkm4",
+        "uid": "66f51b1f-e3bc-11e6-8c62-4a707d996522",
+        "apiVersion": "v1",
+        "resourceVersion": "415",
+        "fieldPath": "spec.containers{botella}"
+      },
+      "reason": "Pulled",
+      "message": "Successfully pulled image \"agonzalezro/botella:0.1.4\"",
+      "source": {
+        "component": "kubelet",
+        "host": "minikube"
+      },
+      "firstTimestamp": "2017-01-26T11:41:42Z",
+      "lastTimestamp": "2017-01-26T11:41:42Z",
+      "count": 1,
+      "type": "Normal"
+    },
+    {
+      "metadata": {
+        "name": "botella-deployment-623040315-pwkm4.149d4f8931194972",
+        "namespace": "default",
+        "selfLink": "/api/v1/namespaces/default/events/botella-deployment-623040315-pwkm4.149d4f8931194972",
+        "uid": "6879f4bd-e3bc-11e6-8c62-4a707d996522",
+        "resourceVersion": "429",
+        "creationTimestamp": "2017-01-26T11:41:42Z"
+      },
+      "involvedObject": {
+        "kind": "Pod",
+        "namespace": "default",
+        "name": "botella-deployment-623040315-pwkm4",
+        "uid": "66f51b1f-e3bc-11e6-8c62-4a707d996522",
+        "apiVersion": "v1",
+        "resourceVersion": "415",
+        "fieldPath": "spec.containers{botella}"
+      },
+      "reason": "Created",
+      "message": "Created container with docker id 1a8742610734; Security:[seccomp=unconfined]",
+      "source": {
+        "component": "kubelet",
+        "host": "minikube"
+      },
+      "firstTimestamp": "2017-01-26T11:41:42Z",
+      "lastTimestamp": "2017-01-26T11:41:42Z",
+      "count": 1,
+      "type": "Normal"
+    },
+    {
+      "metadata": {
+        "name": "botella-deployment-623040315-pwkm4.149d4f89372e4008",
+        "namespace": "default",
+        "selfLink": "/api/v1/namespaces/default/events/botella-deployment-623040315-pwkm4.149d4f89372e4008",
+        "uid": "68897b69-e3bc-11e6-8c62-4a707d996522",
+        "resourceVersion": "430",
+        "creationTimestamp": "2017-01-26T11:41:42Z"
+      },
+      "involvedObject": {
+        "kind": "Pod",
+        "namespace": "default",
+        "name": "botella-deployment-623040315-pwkm4",
+        "uid": "66f51b1f-e3bc-11e6-8c62-4a707d996522",
+        "apiVersion": "v1",
+        "resourceVersion": "415",
+        "fieldPath": "spec.containers{botella}"
+      },
+      "reason": "Started",
+      "message": "Started container with docker id 1a8742610734",
+      "source": {
+        "component": "kubelet",
+        "host": "minikube"
+      },
+      "firstTimestamp": "2017-01-26T11:41:42Z",
+      "lastTimestamp": "2017-01-26T11:41:42Z",
+      "count": 1,
+      "type": "Normal"
+    },
+    {
+      "metadata": {
+        "name": "botella-deployment-623040315-pwkm4.149d50ffde008c60",
+        "namespace": "default",
+        "selfLink": "/api/v1/namespaces/default/events/botella-deployment-623040315-pwkm4.149d50ffde008c60",
+        "uid": "27a59db3-e3c0-11e6-8c62-4a707d996522",
+        "resourceVersion": "2221",
+        "creationTimestamp": "2017-01-26T12:08:31Z"
+      },
+      "involvedObject": {
+        "kind": "Pod",
+        "namespace": "default",
+        "name": "botella-deployment-623040315-pwkm4",
+        "uid": "66f51b1f-e3bc-11e6-8c62-4a707d996522",
+        "apiVersion": "v1",
+        "resourceVersion": "415",
+        "fieldPath": "spec.containers{botella}"
+      },
+      "reason": "Killing",
+      "message": "Killing container with docker id 1a8742610734: Need to kill pod.",
+      "source": {
+        "component": "kubelet",
+        "host": "minikube"
+      },
+      "firstTimestamp": "2017-01-26T12:08:31Z",
+      "lastTimestamp": "2017-01-26T12:08:31Z",
+      "count": 1,
+      "type": "Normal"
+    },
+    {
+      "metadata": {
+        "name": "botella-deployment-623040315-pwkm4.149d50ffe0fdb243",
+        "namespace": "default",
+        "selfLink": "/api/v1/namespaces/default/events/botella-deployment-623040315-pwkm4.149d50ffe0fdb243",
+        "uid": "27acd9c2-e3c0-11e6-8c62-4a707d996522",
+        "resourceVersion": "2222",
+        "creationTimestamp": "2017-01-26T12:08:32Z"
+      },
+      "involvedObject": {
+        "kind": "Pod",
+        "namespace": "default",
+        "name": "botella-deployment-623040315-pwkm4",
+        "uid": "66f51b1f-e3bc-11e6-8c62-4a707d996522",
+        "apiVersion": "v1",
+        "resourceVersion": "415",
+        "fieldPath": "spec.containers{kubectl-proxy}"
+      },
+      "reason": "Killing",
+      "message": "Killing container with docker id e3c5610b5795: Need to kill pod.",
+      "source": {
+        "component": "kubelet",
+        "host": "minikube"
+      },
+      "firstTimestamp": "2017-01-26T12:08:32Z",
+      "lastTimestamp": "2017-01-26T12:08:32Z",
+      "count": 1,
+      "type": "Normal"
+    },
+    {
+      "metadata": {
+        "name": "botella-deployment-623040315-z14k3.149d4f87d899e37a",
+        "namespace": "default",
+        "selfLink": "/api/v1/namespaces/default/events/botella-deployment-623040315-z14k3.149d4f87d899e37a",
+        "uid": "6507fc2e-e3bc-11e6-8c62-4a707d996522",
+        "resourceVersion": "395",
+        "creationTimestamp": "2017-01-26T11:41:36Z"
+      },
+      "involvedObject": {
+        "kind": "Pod",
+        "namespace": "default",
+        "name": "botella-deployment-623040315-z14k3",
+        "uid": "e4b4042e-e3bb-11e6-8c62-4a707d996522",
+        "apiVersion": "v1",
+        "resourceVersion": "58",
+        "fieldPath": "spec.containers{kubectl-proxy}"
+      },
+      "reason": "Killing",
+      "message": "Killing container with docker id 274defc2ca27: Need to kill pod.",
+      "source": {
+        "component": "kubelet",
+        "host": "minikube"
+      },
+      "firstTimestamp": "2017-01-26T11:41:36Z",
+      "lastTimestamp": "2017-01-26T11:41:36Z",
+      "count": 1,
+      "type": "Normal"
+    },
+    {
+      "metadata": {
+        "name": "botella-deployment-623040315-z14k3.149d4f87da32ca54",
+        "namespace": "default",
+        "selfLink": "/api/v1/namespaces/default/events/botella-deployment-623040315-z14k3.149d4f87da32ca54",
+        "uid": "650c1f58-e3bc-11e6-8c62-4a707d996522",
+        "resourceVersion": "396",
+        "creationTimestamp": "2017-01-26T11:41:37Z"
+      },
+      "involvedObject": {
+        "kind": "Pod",
+        "namespace": "default",
+        "name": "botella-deployment-623040315-z14k3",
+        "uid": "e4b4042e-e3bb-11e6-8c62-4a707d996522",
+        "apiVersion": "v1",
+        "resourceVersion": "58",
+        "fieldPath": "spec.containers{botella}"
+      },
+      "reason": "Killing",
+      "message": "Killing container with docker id dbbff3c58707: Need to kill pod.",
+      "source": {
+        "component": "kubelet",
+        "host": "minikube"
+      },
+      "firstTimestamp": "2017-01-26T11:41:37Z",
+      "lastTimestamp": "2017-01-26T11:41:37Z",
+      "count": 1,
+      "type": "Normal"
+    },
+    {
+      "metadata": {
+        "name": "botella-deployment-623040315.149d4f87d29e9f3c",
+        "namespace": "default",
+        "selfLink": "/api/v1/namespaces/default/events/botella-deployment-623040315.149d4f87d29e9f3c",
+        "uid": "64f8e83f-e3bc-11e6-8c62-4a707d996522",
+        "resourceVersion": "391",
+        "creationTimestamp": "2017-01-26T11:41:36Z"
+      },
+      "involvedObject": {
+        "kind": "ReplicaSet",
+        "namespace": "default",
+        "name": "botella-deployment-623040315",
+        "uid": "e4b1f802-e3bb-11e6-8c62-4a707d996522",
+        "apiVersion": "extensions",
+        "resourceVersion": "387"
+      },
+      "reason": "SuccessfulDelete",
+      "message": "Deleted pod: botella-deployment-623040315-z14k3",
+      "source": {
+        "component": "replicaset-controller"
+      },
+      "firstTimestamp": "2017-01-26T11:41:36Z",
+      "lastTimestamp": "2017-01-26T11:41:36Z",
+      "count": 1,
+      "type": "Normal"
+    },
+    {
+      "metadata": {
+        "name": "botella-deployment-623040315.149d4f889a09931a",
+        "namespace": "default",
+        "selfLink": "/api/v1/namespaces/default/events/botella-deployment-623040315.149d4f889a09931a",
+        "uid": "66f83293-e3bc-11e6-8c62-4a707d996522",
+        "resourceVersion": "413",
+        "creationTimestamp": "2017-01-26T11:41:40Z"
+      },
+      "involvedObject": {
+        "kind": "ReplicaSet",
+        "namespace": "default",
+        "name": "botella-deployment-623040315",
+        "uid": "66f39e7d-e3bc-11e6-8c62-4a707d996522",
+        "apiVersion": "extensions",
+        "resourceVersion": "409"
+      },
+      "reason": "SuccessfulCreate",
+      "message": "Created pod: botella-deployment-623040315-pwkm4",
+      "source": {
+        "component": "replicaset-controller"
+      },
+      "firstTimestamp": "2017-01-26T11:41:40Z",
+      "lastTimestamp": "2017-01-26T11:41:40Z",
+      "count": 1,
+      "type": "Normal"
+    },
+    {
+      "metadata": {
+        "name": "botella-deployment-623040315.149d50ffd64cbe2a",
+        "namespace": "default",
+        "selfLink": "/api/v1/namespaces/default/events/botella-deployment-623040315.149d50ffd64cbe2a",
+        "uid": "27917deb-e3c0-11e6-8c62-4a707d996522",
+        "resourceVersion": "2217",
+        "creationTimestamp": "2017-01-26T12:08:31Z"
+      },
+      "involvedObject": {
+        "kind": "ReplicaSet",
+        "namespace": "default",
+        "name": "botella-deployment-623040315",
+        "uid": "66f39e7d-e3bc-11e6-8c62-4a707d996522",
+        "apiVersion": "extensions",
+        "resourceVersion": "2213"
+      },
+      "reason": "SuccessfulDelete",
+      "message": "Deleted pod: botella-deployment-623040315-pwkm4",
+      "source": {
+        "component": "replicaset-controller"
+      },
+      "firstTimestamp": "2017-01-26T12:08:31Z",
+      "lastTimestamp": "2017-01-26T12:08:31Z",
+      "count": 1,
+      "type": "Normal"
+    },
+    {
+      "metadata": {
+        "name": "botella-deployment.149d4f87d14c1d38",
+        "namespace": "default",
+        "selfLink": "/api/v1/namespaces/default/events/botella-deployment.149d4f87d14c1d38",
+        "uid": "64f55aaa-e3bc-11e6-8c62-4a707d996522",
+        "resourceVersion": "388",
+        "creationTimestamp": "2017-01-26T11:41:36Z"
+      },
+      "involvedObject": {
+        "kind": "Deployment",
+        "namespace": "default",
+        "name": "botella-deployment",
+        "uid": "e4b121fb-e3bb-11e6-8c62-4a707d996522",
+        "apiVersion": "extensions",
+        "resourceVersion": "386"
+      },
+      "reason": "ScalingReplicaSet",
+      "message": "Scaled down replica set botella-deployment-623040315 to 0",
+      "source": {
+        "component": "deployment-controller"
+      },
+      "firstTimestamp": "2017-01-26T11:41:36Z",
+      "lastTimestamp": "2017-01-26T11:41:36Z",
+      "count": 1,
+      "type": "Normal"
+    },
+    {
+      "metadata": {
+        "name": "botella-deployment.149d4f8898fce1d9",
+        "namespace": "default",
+        "selfLink": "/api/v1/namespaces/default/events/botella-deployment.149d4f8898fce1d9",
+        "uid": "66f4979d-e3bc-11e6-8c62-4a707d996522",
+        "resourceVersion": "410",
+        "creationTimestamp": "2017-01-26T11:41:40Z"
+      },
+      "involvedObject": {
+        "kind": "Deployment",
+        "namespace": "default",
+        "name": "botella-deployment",
+        "uid": "66f30d4d-e3bc-11e6-8c62-4a707d996522",
+        "apiVersion": "extensions",
+        "resourceVersion": "408"
+      },
+      "reason": "ScalingReplicaSet",
+      "message": "Scaled up replica set botella-deployment-623040315 to 1",
+      "source": {
+        "component": "deployment-controller"
+      },
+      "firstTimestamp": "2017-01-26T11:41:40Z",
+      "lastTimestamp": "2017-01-26T11:41:40Z",
+      "count": 1,
+      "type": "Normal"
+    },
+    {
+      "metadata": {
+        "name": "botella-deployment.149d50ffd5531768",
+        "namespace": "default",
+        "selfLink": "/api/v1/namespaces/default/events/botella-deployment.149d50ffd5531768",
+        "uid": "278f4e8b-e3c0-11e6-8c62-4a707d996522",
+        "resourceVersion": "2214",
+        "creationTimestamp": "2017-01-26T12:08:31Z"
+      },
+      "involvedObject": {
+        "kind": "Deployment",
+        "namespace": "default",
+        "name": "botella-deployment",
+        "uid": "66f30d4d-e3bc-11e6-8c62-4a707d996522",
+        "apiVersion": "extensions",
+        "resourceVersion": "2212"
+      },
+      "reason": "ScalingReplicaSet",
+      "message": "Scaled down replica set botella-deployment-623040315 to 0",
+      "source": {
+        "component": "deployment-controller"
+      },
+      "firstTimestamp": "2017-01-26T12:08:31Z",
+      "lastTimestamp": "2017-01-26T12:08:31Z",
+      "count": 1,
+      "type": "Normal"
+    },
+    {
+      "metadata": {
+        "name": "botella-deployment.149d5101339dc8ee",
+        "namespace": "default",
+        "selfLink": "/api/v1/namespaces/default/events/botella-deployment.149d5101339dc8ee",
+        "uid": "2b106ae4-e3c0-11e6-8c62-4a707d996522",
+        "resourceVersion": "2237",
+        "creationTimestamp": "2017-01-26T12:08:37Z"
+      },
+      "involvedObject": {
+        "kind": "Deployment",
+        "namespace": "default",
+        "name": "botella-deployment",
+        "uid": "2b09cfcb-e3c0-11e6-8c62-4a707d996522",
+        "apiVersion": "extensions",
+        "resourceVersion": "2235"
+      },
+      "reason": "ScalingReplicaSet",
+      "message": "Scaled up replica set botella-deployment-409369321 to 1",
+      "source": {
+        "component": "deployment-controller"
+      },
+      "firstTimestamp": "2017-01-26T12:08:37Z",
+      "lastTimestamp": "2017-01-26T12:08:37Z",
+      "count": 1,
+      "type": "Normal"
+    },
+    {
+      "metadata": {
+        "name": "botella-deployment.149d51ec07eddc44",
+        "namespace": "default",
+        "selfLink": "/api/v1/namespaces/default/events/botella-deployment.149d51ec07eddc44",
+        "uid": "84398e9d-e3c2-11e6-8c62-4a707d996522",
+        "resourceVersion": "3372",
+        "creationTimestamp": "2017-01-26T12:25:26Z"
+      },
+      "involvedObject": {
+        "kind": "Deployment",
+        "namespace": "default",
+        "name": "botella-deployment",
+        "uid": "2b09cfcb-e3c0-11e6-8c62-4a707d996522",
+        "apiVersion": "extensions",
+        "resourceVersion": "3369"
+      },
+      "reason": "ScalingReplicaSet",
+      "message": "Scaled down replica set botella-deployment-409369321 to 0",
+      "source": {
+        "component": "deployment-controller"
+      },
+      "firstTimestamp": "2017-01-26T12:25:26Z",
+      "lastTimestamp": "2017-01-26T12:25:26Z",
+      "count": 1,
+      "type": "Normal"
+    },
+    {
+      "metadata": {
+        "name": "botella-deployment.149d51edb6cdada0",
+        "namespace": "default",
+        "selfLink": "/api/v1/namespaces/default/events/botella-deployment.149d51edb6cdada0",
+        "uid": "88889ce8-e3c2-11e6-8c62-4a707d996522",
+        "resourceVersion": "3396",
+        "creationTimestamp": "2017-01-26T12:25:33Z"
+      },
+      "involvedObject": {
+        "kind": "Deployment",
+        "namespace": "default",
+        "name": "botella-deployment",
+        "uid": "8885d60c-e3c2-11e6-8c62-4a707d996522",
+        "apiVersion": "extensions",
+        "resourceVersion": "3394"
+      },
+      "reason": "ScalingReplicaSet",
+      "message": "Scaled up replica set botella-deployment-409369321 to 1",
+      "source": {
+        "component": "deployment-controller"
+      },
+      "firstTimestamp": "2017-01-26T12:25:33Z",
+      "lastTimestamp": "2017-01-26T12:25:33Z",
+      "count": 1,
+      "type": "Normal"
+    }
+  ]
+}

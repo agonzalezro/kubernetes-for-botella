@@ -5,6 +5,8 @@ defmodule Bot do
         {:ok, &Handler.get_pods/0}
       ~r/get services/ |> Regex.match?(body) ->
         {:ok, &Handler.get_services/0}
+      ~r/get events/ |> Regex.match?(body) ->
+        {:ok, &Handler.get_events/0}
       ~r/ping$/ |> Regex.match?(body) ->
         {:ok, &Handler.ping/0}
       true ->
@@ -43,6 +45,15 @@ defmodule Handler do
     "Your running services are: #{services}"
   end
 
+  def get_events do
+    events = @kubernetes_client.events
+    |> Poison.decode!
+    |> Map.get("items")
+    |> Enum.map(&(Map.get(&1, "message")))
+    |> Enum.take(-10)
+    ["Last 10 events: " | events] |> Enum.join("\n")
+  end
+
   def ping do
     "pong"
   end
@@ -70,6 +81,10 @@ defmodule Kubernetes do
   def services do
     get("services")
   end
+
+  def events do
+    get("events")
+  end
 end
 
 # TODO: move this to test/
@@ -85,5 +100,9 @@ defmodule Kubernetes.Sandbox do
 
   def services do
     from_fixture("services")
+  end
+
+  def events do
+    from_fixture("events")
   end
 end
