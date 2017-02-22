@@ -26,7 +26,7 @@ config :bot,
 
 config :bot,
   apiserver: System.get_env("APISERVER"),
-  token: System.get_env("TOKEN")
+  token: File.read!(System.get_env("TOKEN_PATH") || "/run/secrets/kubernetes.io/serviceaccount/token")
 
 # It is also possible to import configuration files, relative to this
 # directory. For example, you can emulate configuration per environment
